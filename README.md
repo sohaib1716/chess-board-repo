@@ -12,7 +12,14 @@ Chess Pieces and Movement
 1) Pawn: Moves one step vertically forward.
 2) King: Moves one step in any of the eight directions (vertical, horizontal, diagonal).
 3) Queen: Moves any number of steps in any of the eight directions.
-   
+
+Code Overview
+- ChessPiece (Abstract Class): Base class that defines the structure for chess pieces, including the abstract possibleMoves() method.
+- Pawn: Extends ChessPiece, implementing movement logic to move one square forward.
+- King: Extends ChessPiece, implementing movement logic to move one square in any direction (horizontal, vertical, diagonal).
+- Queen: Extends ChessPiece, implementing movement logic to move any number of squares in all directions.
+- ChessSimulation (Main Class): Handles user input, creates the appropriate chess piece, and displays the possible moves.
+
 Example Inputs and Outputs
 
 - Input: Pawn, G1
